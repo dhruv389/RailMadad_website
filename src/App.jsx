@@ -1,13 +1,26 @@
 import "./App.css";
-import { useDispatch, useSelector } from "react-redux";
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Layout from "./components/Layout";
+import Error from "./pages/Error";
+import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
-  
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      errorElement: <Error />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: "dashboard/*", element: <Dashboard /> },
+      ],
+    },
+  ]);
+
   return (
     <>
-      <h1 className="text-3xl  font-bold ">Welcome to SIH24😊🔥🔥🔥🔥🔥🔥</h1>
-
-    
+      <RouterProvider router={router} />
     </>
   );
 }

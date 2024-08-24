@@ -132,6 +132,8 @@ html {
   justify-content: center;
   align-items: center;
   gap: 400px;
+  flex-wrap: wrap;
+  
   padding: 7px;
 }
 

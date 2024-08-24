@@ -25,7 +25,7 @@ const Dashboard = () => {
   return (
     <div className="w-screen bg-[#f6f8f9]  min-h-screen flex  justify-center items-center">
     
-      <div className="w-screen gap-6 min-h-screen  flex justify-center items-center   ">
+      <div className="w-screen custom:flex-col gap-6 min-h-screen  flex justify-center items-center   ">
         <div
           className="w-[9rem] rounded-[2rem] text-sm justify-center items-center  bg-white py-10 px-10 flex flex-col gap-7"
           style={{ boxShadow: " rgba(99, 99, 99, 0.2) 0px 2px 8px 0px" }}

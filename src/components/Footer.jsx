@@ -3,15 +3,15 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer class="footbar">
-        <div class="foot-con">
+    <footer className="footbar ">
+        <div className="foot-con">
             <p>Copyright ©2019 RAILMADAD. All Rights Reserved.</p>
         </div>
-        <div class="asss">
-            <a class="f-a" href="#">Home</a> |
-            <a class="f-a" href="#">FAQs</a> |
-            <a class="f-a" href="#">Railway Admin Login</a> |
-            <a class="f-a" href="#">MIS Report Login</a> 
+        <div className="asss">
+            <a className="f-a" href="#">Home</a> |
+            <a className="f-a" href="#">FAQs</a> |
+            <a className="f-a" href="#">Railway Admin Login</a> |
+            <a className="f-a" href="#">MIS Report Login</a> 
         </div>
 
     </footer>

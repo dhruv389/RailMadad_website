@@ -10,7 +10,7 @@ const Home = () => {
    
 		<div className={`flex min-h-[80vh] flex-col w-screen justify-center items-center `}>
 		 
-		<div className="flex  text-xs border w-[65%] mt-10  pt-7 rounded-[2rem]  justify-center  custom:overflow-x-scroll  gap-12 items-start">
+		<div className="flex  text-xs border w-[65%] mt-10  pt-7 rounded-[2rem]  justify-center custom:w-[90%] custom:px-10  custom:overflow-x-scroll  gap-12 items-start">
                <div className="flex flex-col justify-center text-center items-center  w-[4rem] h-[2re] gap-2">
 				<img src={i1} className="h-[3rem] w-[3rem]"   alt="" />
 				<p>Ticket Booking</p>
@@ -45,7 +45,7 @@ const Home = () => {
 			   </div>
 			</div>
 		 <div className="flex min-h-[80vh] custom:flex-col-reverse  w-screen justify-center items-start pt-14">
-			<div className="w-[45%] gap-3 custom:w-[100%] custom:text-center custom:items-center mt-10  h-[100%]  flex items-start justify-center flex-col">
+			<div className="w-[45%] custom:pb-20 gap-3 custom:w-[100%] custom:text-center custom:items-center mt-10  h-[100%]  flex items-start justify-center flex-col">
 		
 				<h1 className='text-[3rem] font-bold  '>Welcome to  RailMadad</h1>
 				<p className='w-[70%]'>Your Trusted Partner in Railway Journeys – Enquire, Report, Resolve with Rail Madad.</p>

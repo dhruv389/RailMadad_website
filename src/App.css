@@ -129,9 +129,9 @@ html {
   color: white;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content:space-between;
   align-items: center;
-  gap: 400px;
+ 
   flex-wrap: wrap;
   
   padding: 7px;

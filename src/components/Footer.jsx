@@ -1,3 +1,4 @@
+
 import React from 'react'
 
 const Footer = () => {
@@ -12,6 +13,7 @@ const Footer = () => {
             <a class="f-a" href="#">Railway Admin Login</a> |
             <a class="f-a" href="#">MIS Report Login</a> 
         </div>
+
     </footer>
   )
 }

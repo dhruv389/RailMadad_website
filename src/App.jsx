@@ -13,6 +13,7 @@ function App() {
       errorElement: <Error />,
       children: [
         { index: true, element: <Home /> },
+        { path: "dashboard", element: <Dashboard /> },
         { path: "dashboard/*", element: <Dashboard /> },
       ],
     },

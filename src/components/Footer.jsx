@@ -3,18 +3,17 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="footbar ">
-        <div className="foot-con">
-            <p>Copyright ©2019 RAILMADAD. All Rights Reserved.</p>
-        </div>
-        <div className="asss">
-            <a className="f-a" href="#">Home</a> |
-            <a className="f-a" href="#">FAQs</a> |
-            <a className="f-a" href="#">Railway Admin Login</a> |
-            <a className="f-a" href="#">MIS Report Login</a> 
-        </div>
-
-    </footer>
+    <footer className="w-full absolute bg-railmadad flex justify-between px-[7em] py-4 bottom-0 text-white text-[14px]">
+    <div>
+      <p>Copyright &copy;2019 RAILMADAD. All Rights Reserved.</p>
+    </div>
+    <div >
+      <a className="ml-2 mr-1 hover:underline" href="#">Home</a> |
+      <a className="ml-2 mr-1 hover:underline" href="#">FAQs</a> |
+      <a className="ml-2 mr-1 hover:underline" href="#">Railway Admin Login</a> |
+      <a className="ml-2 mr-1 hover:underline" href="#">MIS Report Login</a>
+    </div>
+  </footer>
   )
 }
 

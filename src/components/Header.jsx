@@ -25,8 +25,8 @@ const Header = () => {
                 <p>For Security/Medical Assistance</p>
             </div> */}
             <div className="btns custom:hidden w-[30%] flex gap-10 justify-end ">
-                <button className="login-btn" type="submit">Login</button>
-                <button className="login-btn" type="submit">Sign Up</button>    
+                <Link to="/login"><button className="login-btn" type="submit">Login</button></Link>
+               <Link to="/signup"> <button className="login-btn" type="submit">Sign Up</button>  </Link>  
             </div>
         </div>
   )

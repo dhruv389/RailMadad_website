@@ -4,7 +4,8 @@ import Layout from "./components/Layout";
 import Error from "./pages/Error";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
-
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
 function App() {
   const router = createBrowserRouter([
     {
@@ -14,6 +15,8 @@ function App() {
       children: [
         { index: true, element: <Home /> },
         { path: "dashboard", element: <Dashboard /> },
+        { path: "login", element: <Login /> },
+        { path: "signup", element: <SignUp/> },
         { path: "dashboard/*", element: <Dashboard /> },
       ],
     },

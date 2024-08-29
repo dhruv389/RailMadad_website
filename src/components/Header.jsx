@@ -2,11 +2,53 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import icon1 from "../Images/download (2).png"
 import Sidebar from './Sidebar'
+import { useFirebase  } from '../firebase/firebase';
+import { signOut } from 'firebase/auth';
+import Swal from 'sweetalert2'
+import Dropdown from './Dropdown';
 
 const Header = () => {
+const firebase = useFirebase();
+ console.log(firebase.isLoggedin);
+ 
+ const handleLogout = async () => {
+  Swal.fire({
+    title: "Are you sure?",
+    text: "You won't be able to revert this!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Yes, log out!",
+    cancelButtonText: "Cancel"
+  }).then(async (result) => {
+    if (result.isConfirmed) {
+      try {
+        await signOut(firebase.auth);
+        Swal.fire({
+          title: "Logged out!",
+          text: "You have been signed out.",
+          icon: "success"
+        }).then(() => {
+          // Reload the page after the success alert is closed
+          window.location.reload();
+        });
+        console.log('User signed out!');
+      } catch (error) {
+        Swal.fire({
+          title: "Error!",
+          text: `Error signing out: ${error.message}`,
+          icon: "error"
+        });
+        console.error('Error signing out:', error);
+      }
+    }
+  });
+};
+ 
   return (
     <div className="navbar">
-    <div className="h-[5rem] gap-10 custom:gap-1 custom:w-full  flex w-[60%]">
+    <div className="h-[5rem] gap-10 custom:gap-1 custom:w-full  flex w-[40%]">
     <div className="hidden custom:flex custom:pt-4"> <Sidebar/></div>
    
     <Link to="/" className="smj-icon  h-[5rem]   w-[5rem]" >
@@ -24,10 +66,24 @@ const Header = () => {
                 </button>
                 <p>For Security/Medical Assistance</p>
             </div> */}
-            <div className="btns custom:hidden w-[30%] flex gap-10 justify-end ">
-                <Link to="/login"><button className="login-btn" type="submit">Login</button></Link>
+
+ 
+            
+
+            {
+              !firebase.isLoggedin  && ( <div className="btns custom:hidden w-[30%] flex gap-10 justify-end ">
+               
+               <Link to="/login"><button className="login-btn" type="submit">Login</button></Link>
                <Link to="/signup"> <button className="login-btn" type="submit">Sign Up</button>  </Link>  
-            </div>
+            </div>)
+            }
+            {
+              firebase.isLoggedin  && <div className="btns custom:hidden w-[30%] flex gap-10 justify-end ">
+              <Dropdown/>
+              <button className="login-btn" type="submit" onClick={handleLogout}>Logout</button>
+              </div> 
+            }
+           
         </div>
   )
 }

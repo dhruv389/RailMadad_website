@@ -23,13 +23,24 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="w-screen bg-[#f6f8f9]  min-h-screen flex  justify-center items-center">
+    <div className="w-screen bg-[#f6f8f9]  min-h-screen flex  justify-center items-center" style={{ backgroundImage: `url(#)` ,backgroundRepeat:"no-repeat", objectFit:"cover" ,backgroundSize:"100%" }}>
     
       <div className="w-screen  gap-6 min-h-screen  flex justify-center items-center   ">
         <div
           className="w-[9rem] custom:hidden rounded-[2rem] text-sm justify-center items-center  bg-white py-10 px-10 flex flex-col gap-7"
-          style={{ boxShadow: " rgba(99, 99, 99, 0.2) 0px 2px 8px 0px" }}
+          // style={{ boxShadow: " rgba(99, 99, 99, 0.2) 0px 2px 8px 0px" }}
         >
+
+<button
+            className="h-[3.5rem] flex-col text-center font-medium flex justify-start pl-4 items-center "
+            onClick={() =>
+              handleTabClick("enquiry")
+            }
+          >
+            <FaBuildingUser className="text-[25px]" />
+            <p>Complaint</p>
+          </button>
+
           <button
             className="h-[3.5rem] flex-col text-center font-medium flex justify-start pl-4 items-center "
             onClick={() =>
@@ -65,15 +76,7 @@ const Dashboard = () => {
 
           
 
-          <button
-            className="h-[3.5rem] flex-col text-center font-medium flex justify-start pl-4 items-center "
-            onClick={() =>
-              handleTabClick("enquiry")
-            }
-          >
-            <FaBuildingUser className="text-[25px]" />
-            <p>Enquiry</p>
-          </button>
+          
 
           <button
             className="h-[3.5rem] flex-col text-center font-medium flex justify-start pl-4 items-center "

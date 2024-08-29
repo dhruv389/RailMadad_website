@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="w-full absolute bg-railmadad flex justify-between px-[7em] py-4 bottom-0 text-white text-[14px]">
+    <footer className="footbar">
     <div>
       <p>Copyright &copy;2019 RAILMADAD. All Rights Reserved.</p>
     </div>

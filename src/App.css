@@ -80,8 +80,8 @@ html {
   background-color: transparent;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 40px;
+  justify-content: space-between;
+  gap: 20px;
   flex-wrap: wrap;
   padding-left: 1rem;
 }
@@ -144,4 +144,28 @@ html {
 .f-a {
   text-decoration: none;
   color: white;
+}
+
+
+
+
+
+
+
+
+.container {
+  height: 200vh; /* Make sure the container is tall enough to allow scrolling */
+  width: 100%;
+  position: relative;
+}
+
+.moving-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  transition: transform 0.1s ease-in-out;
 }

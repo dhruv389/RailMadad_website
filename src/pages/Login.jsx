@@ -35,7 +35,7 @@ const Toast = Swal.mixin({
             const user=await signInWithEmailAndPassword(firebase.auth, email, password);
             
             const uid = user.user.uid;
-            navigate("/");
+            navigate("/dashboard/enquiry");
             // Swal.fire("You are Login!");
 
            

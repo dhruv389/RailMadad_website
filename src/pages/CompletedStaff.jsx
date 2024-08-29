@@ -2,6 +2,7 @@ import React from 'react'
 import DetailCard3 from "../components/DetailCard3";
 import { Link } from "react-router-dom";
 import { useState } from 'react';
+import products from "./products.json"
 
 const PendingComplaint = () => {
 
@@ -13,33 +14,6 @@ const PendingComplaint = () => {
     const closeDialog = () => setIsDialogOpen(false);
 
 
-    const products = [
-        {
-          id: 1,
-          image: "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?cs=srgb&dl=pexels-chanwalrus-958545.jpg&fm=jpg",
-          name: "Nike Air Force",
-          category: "Food",
-          user: "John Doe",
-          date: "2021-06-20",
-          pending: 50,
-          status: "Pending",
-          price: "$250",
-          rating: 4.8,
-        },
-        {
-          id: 2,
-          image: "nike-react.png",
-          name: "Nike React",
-          category: "Water-supply",
-          user: "dev joshi",
-          date: "2021-06-20",
-          pending: 50,
-          status: "Pending",
-          price: "$200",
-          rating: 4.8,
-        },
-        // Add more products here...
-      ];
   return (
     <table className="w-full mt-6 text-xs bg-white shadow-md rounded-lg">
      <DetailCard3

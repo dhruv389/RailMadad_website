@@ -96,38 +96,60 @@ const Home = () => {
 			</div>
 
 			<div className="flex  text-xs w-[80%] mt-1  pt-7 rounded-[2rem]  justify-center custom:w-[90%] custom:px-10  custom:overflow-x-scroll  gap-12 items-start">
-				<div className="flex flex-col justify-center text-center items-center  shadow-lg rounded-lg py-2 w-[6rem] h-[2re] gap-2">
-					<img src={i1} className="h-[3rem] w-[3rem]" alt="" />
-					<p>Ticket Booking</p>
-				</div>
-				<div className="flex flex-col justify-center items-center  text-center shadow-lg rounded-lg py-2 w-[6rem] h-[2re] gap-2">
-					<img src={i2} className="h-[3rem] w-[3rem]" alt="" />
-					<p>Train Enquiry</p>
-				</div>
-				<div className="flex flex-col justify-center items-center text-center shadow-lg rounded-lg py-2 w-[6rem] h-[2re] gap-2">
-					<img src={i3} className="h-[3rem] w-[3rem]" alt="" />
-					<p>Reservation Enquiry</p>
-				</div>
-				<div className="flex flex-col justify-center items-center text-center shadow-lg rounded-lg py-2 w-[6rem] h-[2re] gap-2">
-					<img src={i2} className="h-[3rem] w-[3rem]" alt="" />
-					<p>Indian Railways</p>
-				</div>
-				<div className="flex flex-col justify-center items-center text-center shadow-lg rounded-lg py-2 w-[6rem] h-[2re] gap-2">
-					<img src={i1} className="h-[3rem] w-[3rem]" alt="" />
-					<p>UTS Ticketing</p>
-				</div>
-				<div className="flex flex-col justify-center items-center text-center shadow-lg rounded-lg py-2 w-[6rem] h-[2re] gap-2">
-					<img src={i3} className="h-[3rem] w-[3rem]" alt="" />
-					<p>Enqiry</p>
-				</div>
-				<div className="flex flex-col justify-center items-center text-center shadow-lg rounded-lg py-2 w-[6rem] h-[2re] gap-2">
-					<img src={i2} className="h-[3rem] w-[3rem]" alt="" />
-					<p>Railway Parcel Website</p>
-				</div>
-				<div className="flex rounded-lg shadow-lg py-2 flex-col justify-center items-center text-center w-[6rem]  gap-2">
-					<img src={i1} className="h-[3rem] w-[3rem]" alt="" />
-					<p>Freight Business</p>
-				</div>
+				<a href="https://www.irctc.co.in/nget/train-search" target='blank'>
+
+					<div className="flex flex-col justify-center text-center items-center  shadow-lg rounded-lg py-2 w-[6rem] h-[2re] gap-2">
+						<img src={i1} className="h-[3rem] w-[3rem]" alt="" />
+						<p>Ticket Booking</p>
+					</div>
+				</a>
+				<a href="https://enquiry.indianrail.gov.in/mntes/" target='blank'>
+
+					<div className="flex flex-col justify-center items-center  text-center shadow-lg rounded-lg py-2 w-[6rem] h-[2re] gap-2">
+						<img src={i2} className="h-[3rem] w-[3rem]" alt="" />
+						<p>Train Enquiry</p>
+					</div>
+				</a>
+				<a href="https://www.indianrail.gov.in/enquiry/StaticPages/StaticEnquiry.jsp?StaticPage=index.html" target='blank'>
+
+					<div className="flex flex-col justify-center items-center text-center shadow-lg rounded-lg py-2 w-[6rem] h-[2re] gap-2">
+						<img src={i3} className="h-[3rem] w-[3rem]" alt="" />
+						<p>Reservation Enquiry</p>
+					</div>
+				</a>
+				<a href="https://indianrailways.gov.in/" target='blank'>
+
+					<div className="flex flex-col justify-center items-center text-center shadow-lg rounded-lg py-2 w-[6rem] h-[2re] gap-2">
+						<img src={i2} className="h-[3rem] w-[3rem]" alt="" />
+						<p>Indian Railways</p>
+					</div>
+				</a>
+				<a href="https://play.google.com/store/apps/details?id=com.cris.utsmobile&hl=en_IN&pli=1" target='blank'>
+
+					<div className="flex flex-col justify-center items-center text-center shadow-lg rounded-lg py-2 w-[6rem] h-[2re] gap-2">
+						<img src={i1} className="h-[3rem] w-[3rem]" alt="" />
+						<p>UTS Ticketing</p>
+					</div>
+				</a>
+				<a href="https://enquiry.indianrail.gov.in/" target='blank'>
+
+					<div className="flex flex-col justify-center items-center text-center shadow-lg rounded-lg py-2 w-[6rem] h-[2re] gap-2">
+						<img src={i3} className="h-[3rem] w-[3rem]" alt="" />
+						<p>Enqiry</p>
+					</div>
+				</a>
+				<a href="https://parcel.indianrail.gov.in/" target='blank'>
+					<div className="flex flex-col justify-center items-center text-center shadow-lg rounded-lg py-2 w-[6rem] h-[2re] gap-2">
+						<img src={i2} className="h-[3rem] w-[3rem]" alt="" />
+						<p>Railway Parcel Website</p>
+					</div>
+				</a>
+				<a href="https://www.fois.indianrail.gov.in/RailSAHAY/index.jsp" target='blank'>
+					<div className="flex rounded-lg shadow-lg py-2 flex-col justify-center items-center text-center w-[6rem]  gap-2">
+						<img src={i1} className="h-[3rem] w-[3rem]" alt="" />
+						<p>Freight Business</p>
+					</div>
+				</a>
 			</div>
 
 

@@ -9,6 +9,7 @@ import { Tilt } from '@jdion/tilt-react'
 
 import rob1 from "../Images/rob2.gif"
 
+
 const Home = () => {
 
 	// const [data, setData] = useState(null);
@@ -57,7 +58,7 @@ const Home = () => {
 				<div className="w-[95%] custom:pb-2 gap-3 custom:w-[100%] custom:text-center custom:items-center mt-10 custom:mt-0  h-[100%]  flex items-center justify-center flex-col">
 					<Tilt>
 						<h1 className='text-[3rem] custom:text-[1.7rem] font-bold text-center  cursor-pointer '>Welcome to <span className='text-red-800'>Rail Madad</span> : Your <span className='text-red-800'>Trusted</span>  Platform for Resolving <span className='text-red-800'>Railway</span>  Concerns</h1> </Tilt>
-					<p className='text-center custom:text-sm w-[80%] font-medium'>Whether it's issues with tickets, food, cleanliness, or any other railway-related problems, we're here to help you find swift solutions and ensure a better travel experience.</p>
+					<p className='text-center custom:text-sm w-[80%] font-medium'>Whether it's issues with tickets, food, cleanliness, or any other railway-related problems, we&apos;re here to help you find swift solutions and ensure a better travel experience.</p>
 
 					{/* <Link to="/dashboard" className='w-[70%] bg-black rounded-xl flex justify-center items-center mt-8 text-white h-[3rem]'>
 				<Tilt > Get started
@@ -239,7 +240,7 @@ const Home = () => {
 
 				</div>
 			</div>
-
+			
 		</div>
 
 	)

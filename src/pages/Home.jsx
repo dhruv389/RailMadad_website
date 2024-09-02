@@ -58,8 +58,8 @@ const Home = () => {
 			</div>
 
 			
-		<div className="w-[45%] custom:mt-[0rem] custom:w-[100%] flex mt-[1rem] justify-center items-center  h-[80%]">
-				<img src={train} alt="" className='h-full  object-contain w-full ' />
+		<div className="w-[80%]  custom:mt-[0rem] custom:w-[100%] flex mt-[1rem] justify-center items-center  h-[25rem]">
+				<img src="https://images.pexels.com/photos/1170187/pexels-photo-1170187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" className='h-full rounded-3xl  object-cover w-full ' />
 			</div>
 	
 			

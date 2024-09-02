@@ -1,8 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { Cloudinary } from 'cloudinary-core';
 import { BsStars } from "react-icons/bs";
 
+import TextField from '@mui/material/TextField';
+import Autocomplete from '@mui/material/Autocomplete';
+import station from "../Stations.json"
+
+
 function Enquiry() {
+
+    const [stationNames, setStationNames] = useState([]);
+
+    useEffect(() => {
+      // Extracting station names from the JSON data
+      const names = station.stations.map(station => station.stnName);
+      setStationNames(names);
+    }, []);
    
 
     return (
@@ -20,9 +33,31 @@ function Enquiry() {
 
 
 
+     
+
         <div className="w-[60%] mt-6 text-sm font-semibold flex justify-start flex-col gap-1">
     <p>Station Name:</p>
-        <input type="text" placeholder='e.g., Ahmedabad' className='h-[3rem] py-3 px-2 w-full hover:border-2 hover:border-black rounded-xl border' />
+    <Autocomplete
+      disablePortal
+      options={stationNames}
+      sx={{ width: "100%" , marginTop: '7px' ,borderRadius:"10px" , fontFamily:"Poppins" , fontSize:"16px"}}
+      renderInput={(params) => (
+        <TextField
+          {...params}
+          label="Station Name"
+          sx={{
+            '& .MuiInputBase-root': {
+              height: '50px', // Adjust the height here
+              borderRadius: '10px', // Adjust the border radius here
+           
+              
+              // Smooth transition
+            }
+            
+          }}
+        />
+      )}
+    />
         </div>
 
         <div class="flex items-center  justify-start  w-[60%] mt-6 flex-col">

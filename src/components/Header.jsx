@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate, useNavigation } from 'react-router-dom'
 import icon1 from "../Images/download (2).png"
 import Sidebar from './Sidebar'
 import { useFirebase  } from '../firebase/firebase';
@@ -9,8 +9,8 @@ import Dropdown from './Dropdown';
 
 const Header = () => {
 const firebase = useFirebase();
- console.log(firebase.isLoggedin);
- 
+//  console.log(firebase.isLoggedin);
+ const navigate=useNavigate();
  const handleLogout = async () => {
   Swal.fire({
     title: "Are you sure?",
@@ -31,6 +31,7 @@ const firebase = useFirebase();
           icon: "success"
         }).then(() => {
           // Reload the page after the success alert is closed
+          navigate('/');
           window.location.reload();
         });
         console.log('User signed out!');

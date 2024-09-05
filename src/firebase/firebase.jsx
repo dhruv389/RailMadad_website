@@ -26,12 +26,14 @@ export const useFirebase = () => useContext(FirebaseContext);
 // Firebase Provider component
 export const FirebaseProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [useruid, setuseruid] = useState("");
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       console.log(user.uid);
       if (user) {
         setUser(user);
+        setuseruid(user.uid);
       } else {
         setUser(null);
       }
@@ -44,7 +46,7 @@ export const FirebaseProvider = ({ children }) => {
   const isLoggedin = !!user;
 
   return (
-    <FirebaseContext.Provider value={{ isLoggedin,app,auth, user }}>
+    <FirebaseContext.Provider value={{ isLoggedin,app,auth, user, useruid }}>
       {children}
     </FirebaseContext.Provider>
   );

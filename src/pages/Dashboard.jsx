@@ -8,7 +8,7 @@ import Station from "./DashboardPages/Station";
 import Apprecian from "./DashboardPages/Apprecian";
 import Enquiry from "./DashboardPages/Enquiry";
 import Track from "./DashboardPages/Track";
-
+import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
 
 
 
@@ -41,14 +41,14 @@ const Dashboard = () => {
             <p>Complaint</p>
           </button>
 
-          <button
+          {/* <button
             className="h-[3.5rem] flex-col text-center font-medium flex justify-start pl-4 items-center "
             onClick={() =>
               handleTabClick("train")
             }
           >
             <FaTrainSubway className="text-[25px]" />
-            <p>Train</p>
+            <p>Train Complaint</p>
           </button>
 
           <button
@@ -72,19 +72,19 @@ const Dashboard = () => {
          
          <RiFileList3Fill className="text-[25px]" />
          <p>Apprecian</p>
-          </button>
+          </button> */}
 
           
 
           
 
           <button
-            className="h-[3.5rem] flex-col text-center font-medium flex justify-start pl-4 items-center "
+            className="h-auto flex-col text-center font-medium flex justify-start pl-4 items-center "
             onClick={() =>
               handleTabClick("track")
             }
           >
-            <FaTrainSubway className="text-[25px]" />
+            <HiOutlineClipboardDocumentList  className="text-[25px]" size={"25px"} />
             <p>Track Your concern</p>
           </button>
         </div>

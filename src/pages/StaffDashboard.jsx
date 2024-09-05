@@ -15,22 +15,15 @@ import { HiBell } from "react-icons/hi";
 
 const AdminDashboard = () => {
 
-    const options = [
-        'Coach Cleanliness',
-        'Toilet Hygiene',
-        'Food Quality',
-        'Ticketing Issues',
-        'Staff Behavior',
-        'Punctuality and Delays',
-        'AC/Non-AC Issues',
-        'Safety Concerns',
-        'Luggage Issues',
-        'Reservation Problems',
-        'Facilities for Differently-Abled Passengers',
-        'Water Supply',
-        'Noise Disturbances',
-        'Electrical Issues',
-      ];
+  const options = [
+    'Engineering Department',
+    'Electrical Department',
+    'Traffic Department',
+    'Medical Department',
+    'Security Department',
+    'Sanitation Department',
+    'Food Department',
+  ];
 
 
       const [activeTab2, setActiveTab2] = useState(options[0]);

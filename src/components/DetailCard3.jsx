@@ -12,68 +12,53 @@ const  DetailCard3 = ({ isOpen, onClose, title, text, icon }) => {
       
       <div className="flex justify-between h-full flex-col-reverse  items-start ">
         {/* Left side (Text Details) */}
-        <div className="w-[90%] ">
-          <h1 className="text-2xl font-bold">Puffer Jacket With Pocket Detail</h1>
-          <p className="text-xl font-semibold text-gray-600 mt-2">price <span className="text-black">$47.55</span></p>
-          <p className="text-sm font-semibold text-green-500 mt-1">Active</p>
+        <div className="w-[90%]">
+  <h1 className="text-2xl font-bold">Delay in Train Departure</h1>
+  <p className="text-xl font-semibold text-gray-600 mt-2">Train No. <span className="text-black">67890</span></p>
+  <p className="text-sm font-semibold text-red-500 mt-1">Pending</p>
 
-          <div className="mt-6 flex gap-7 justify-start items-start">
-            <p className="text-sm font-bold text-gray-600">Product UD</p>
-            <p className=" text-sm">PDT-10022024-007</p>
-          </div>
+  <div className="mt-6 flex gap-7 justify-start items-start">
+    <p className="text-sm font-bold text-gray-600">Complaint ID</p>
+    <p className="text-sm">CMP-20240904-002</p>
+  </div>
 
-          <div className="mt-4 flex gap-7 justify-start items-start">
-            <p className="text-sm font-bold text-gray-600">Name Product</p>
-            <p className="text-sm">Puffer Jacket With Pocket Detail</p>
-          </div>
+  <div className="mt-4 flex gap-7 justify-start items-start">
+    <p className="text-sm font-bold text-gray-600">Station Name</p>
+    <p className="text-sm">Mumbai Central</p>
+  </div>
 
-          <div className="mt-4 flex gap-7 justify-start items-start">
-            <p className="text-sm font-bold text-gray-600">Status</p>
-            <p className="text-green-500">Active</p>
-          </div>
+  <div className="mt-4 flex gap-7 justify-start items-start">
+    <p className="text-sm font-bold text-gray-600">Status</p>
+    <p className="text-red-500">Pending</p>
+  </div>
 
-          <div className="mt-4 flex gap-7 justify-start items-start">
-            <p className="text-sm font-bold text-gray-600">Category</p>
-            <p className="text-sm">Jacket</p>
-          </div>
+  <div className="mt-4 flex gap-7 justify-start items-start">
+    <p className="text-sm font-bold text-gray-600">Category</p>
+    <p className="text-sm">Punctuality and Delays</p>
+  </div>
 
-          <div className="mt-4 flex gap-7 justify-start items-start">
-            <p className="text-sm font-bold text-gray-600">Description</p>
-            <p className="text-start text-sm">
-              Cropped puffer jacket made of technical fabric. High neck and long sleeves. Flap pocket at the chest and in-seam side pockets at the hip. Inside pocket detail. Hem with elastic interior. Zip-up front.
-            </p>
-          </div>
+  <div className="mt-4 flex gap-7 justify-start items-start">
+    <p className="text-sm font-bold text-gray-600">Description</p>
+    <p className="text-start text-sm">
+      The train was scheduled to depart at 9:00 AM but was delayed by 3 hours without any announcement. Passengers were left waiting without information.
+    </p>
+  </div>
 
-          <div className="mt-4  flex gap-7 justify-start items-start">
-            <p className="text-sm font-bold text-gray-600">Unite Price</p>
-            <p className="text-sm">$47.55</p>
-          </div>
+  <div className="mt-4 flex gap-7 justify-start items-start">
+    <p className="text-sm font-bold text-gray-600">PNR Number</p>
+    <p className="text-sm">PNR0987654321</p>
+  </div>
 
-          <div className="mt-4  flex gap-7 justify-start items-start">
-            <p className="text-sm font-bold text-gray-600">Stock</p>
-            <p className="text-sm">99</p>
-          </div>
+  <div className="mt-4 flex gap-7 justify-start items-start">
+    <p className="text-sm font-bold text-gray-600">Date of Incident</p>
+    <p className="text-sm">2024-09-02</p>
+  </div>
 
-          <div className="mt-4 flex gap-7 justify-start items-start">
-            <p className="text-sm font-bold text-gray-600">Discount</p>
-            <p className="text-sm">10%</p>
-          </div>
-
-          <div className="mt-4 flex gap-7 justify-start items-start">
-            <p className="text-sm font-bold text-gray-600">Discount Type</p>
-            <p className="text-sm">Chinese New Year Discount</p>
-          </div>
-
-          <div className="mt-4 flex gap-7 justify-start items-start">
-            <p className="text-sm font-bold text-gray-600">Size</p>
-            <p className="text-sm">S, M, XL</p>
-          </div>
-
-          <div className="mt-4 flex gap-7 justify-start items-start">
-            <p className="text-sm font-bold text-gray-600">Gender</p>
-            <p className="text-sm">Woman</p>
-          </div>
-        </div>
+  <div className="mt-4 flex gap-7 justify-start items-start">
+    <p className="text-sm font-bold text-gray-600">Time of Incident</p>
+    <p className="text-sm">09:00 AM</p>
+  </div>
+</div>
 
         {/* Right side (Image Upload and Actions) */}
         <div className="w-[95%] flex flex-col h-full  items-center">

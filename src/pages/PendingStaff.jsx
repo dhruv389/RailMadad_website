@@ -1,9 +1,49 @@
 import React from 'react'
 import DetailCard3 from "../components/DetailCard3";
 import { Link } from "react-router-dom";
-import { useState } from 'react';
+import { useState ,useEffect} from 'react';
+import { useFirebase } from '../firebase/firebase';
 
 const PendingStaff = () => {
+
+  const { useruid } = useFirebase();  // Get the user ID from Firebase
+
+  const [complaints, setComplaints] = useState([]);
+
+  useEffect(() => {
+    // Fetch complaints from your API using the useruid
+    const fetchComplaints = async () => {
+      try {
+        const response = await fetch(`http://localhost:5000/api/User/${useruid}`); // Replace with your API endpoint
+        const data = await response.json();
+        setComplaints(data);
+        console.log(data); // Updated to log the fetched data
+      } catch (error) {
+        console.error('Error fetching complaints:', error);
+      }
+    };
+
+    if (useruid) {  // Ensure useruid is available before fetching data
+      fetchComplaints();
+    }
+  }, [useruid]);
+
+  // Calculate days since the complaint was created
+  const calculateDaysSince = (date) => {
+    const createdAtDate = new Date(date);
+    const currentDate = new Date();
+    const differenceInTime = currentDate - createdAtDate;
+    const differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24)); // Convert time difference from milliseconds to days
+    return differenceInDays;
+  };
+
+
+
+
+
+
+
+
 
     const [isDialogOpen, setIsDialogOpen] = useState(false);
 
@@ -72,7 +112,7 @@ const PendingStaff = () => {
               alt={product.name}
               className="w-10 h-10 mr-3 rounded-full"
             />
-            {product.name}
+            
           </td>
           <td className="p-3">{product.category}</td>
           <td className="p-3">{product.user}</td>
@@ -98,6 +138,16 @@ const PendingStaff = () => {
           </td>
         </tr>
       ))}
+
+
+
+
+
+
+
+
+
+      
     </tbody>
   </table>
   )
